@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="projects.css">
+    <!--DESCRIPTION OF WEBSITE and LINKING ^^-->
+    <meta name= “description” content="Welcome to the experience page of my new resume!">
+    <title>Projects | Resume</title>
+</head>
+<body>
+<div>
+<header>
+    <h1> Sue's New Resume!</h1>
+    <p> check out my resume below!</p>
+
+</header>
+
+<div id="column">
+<nav>
+    <ul>
+        <!-- This is the Navigation bar (the one on the left or center if screen is <750) has all internal pages-->
+        <li><a href="index.html" target="_blank">Home</a></li>
+        <li><a href="education.html" target="_blank">Education</a></li>
+        <li><a href="employment.html" target="_blank">Experience</a></li>
+        <li><a href="skills.html" target="_blank">Skills</a></li>
+        <li><a href="projects.html" target="_blank">Projects</a></li>
+
+    </ul>
+
+</nav>
+<main>
+    <!--Description of prject that I did for class-->
+    <h3> Projects!</h3>
+
+
+    <h4> Internet Restriction Manager - Flask, React </a> </h4>
+    <ul>
+        <li> Developed a full-stack web app using Flask and React, allowing users to set and monitor tasks in real time. </li>
+        <li> Promoted productivity through a Google Chrome extension that alert users upon accessing self-designated blocked websites using JavaScript and FetchAPI.</li>
+        <li> Enhanced user engagement by integrating dual API functionality to fetch and display leading news headlines and current best-selling books. </li>
+    </ul>
+
+    <!--Below is the calculator that I created. The background of the calculator is a gif.
+     User can click input and use buttons to use the calculator. Also includes a clear button to clear input/answer-->
+    <h4 id="greet"> Awesome calculator!</h4>
+    </br> </br>
+    <div id="calc">
+
+        <!--User input-->
+    <label for="first-number">First num:</label><input type="text" id="first-number">
+    <label for="second-number">Second num:</label><input type="text" id="second-number">
+
+        <!--Buttons that user press for caculation. Connected to JS file-->
+    <div id="buttons">
+
+
+        <button onclick="addition()"> + </button>
+        <button onclick="subtraction()"> - </button>
+        <button onclick="multiplication()"> * </button>
+        <button onclick="division()"> / </button>
+        <button onclick="powerbutton()">^</button>
+        <button onclick="clearall()">c</button>
+    </div>
+        <p id="output">Answer:</p>
+    </div>
+
+
+
+
+
+</main>
+</div>
+<footer>
+    <!--Credits!-->
+    <p>All Rights Reserved by An Ngo <a href="credits.html"> Credits</a> &#169</p>
+
+</footer>
+    <script src="calculator.js"></script>
+</div>
+</body>
+
+</html>

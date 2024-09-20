@@ -1,0 +1,142 @@
+*{
+    /* Resets margin for all elements and includes padding and borders in element dimensions */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div{
+    /* Centers div elements horizontally and sets their width to 90% */
+    margin: auto;
+    width: 90%;
+}
+
+main h2{
+    /* Adds top padding to h2 elements inside the main content */
+    padding-top: 10%;
+}
+
+header, footer{
+    /* Styles the header and footer with background color, text color, font family, and padding */
+    background: #003285;
+    color: #FF7F3E;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 4% 2%;
+    max-width: 90%;
+    margin: auto;
+}
+
+header{
+    /* Aligns text to the left in the header */
+    text-align: left;
+}
+
+footer{
+    /* Styles the footer with background color, padding, and justification of content */
+    background: brown;
+    color: bisque;
+    padding: 1vh 1vw;
+    justify-content: space-evenly;
+}
+
+#column{
+    /* Sets #column as a flex container in row layout with a width of 90% */
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+nav{
+    /* Styles the navigation section with list style, background color, text color, and width */
+    list-style: none;
+    background: #2A629A;
+    color: #FFDA78;
+    text-align: center;
+    width: 25%;
+}
+
+nav li{
+    /* Styles navigation list items with margin, font, and block display */
+    margin-top: 60%;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-right: 10%;
+    display: block;
+    padding-left: 0;
+}
+
+nav a{
+    /* Styles anchor links with a border, background color, and center alignment */
+    display: inline;
+    border: #EADBC8 solid 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #EADBC8;
+    margin: 2%;
+}
+
+main{
+    /* Styles the main content area with height, background color, text color, and padding */
+    height: 100vh;
+    background: #FFDA78;
+    color: #003285;
+    text-align: center;
+    padding-top: 20%;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding-bottom: 60%;
+    font-size: calc(2px + 2vw);
+    font-weight: bold;
+    width: 75%;
+}
+@media screen and (max-width: 750px) {
+    /* Responsive styling for screens with a width of 750px or less */
+
+    #column{
+        /* Changes #column layout to inline and sets its width to 100% for small screens */
+        display: inline;
+        width: 100%;
+    }
+
+    nav{
+        /* Styles the navigation with background color, text color, padding, and width for small screens */
+        background: #2A629A;
+        color: #FFDA78;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 90%;
+        margin: auto;
+    }
+
+    nav li{
+        /* Styles navigation list items with font size and inline display for small screens */
+        font-family: "Lucida Console", "Courier New", monospace;
+        display: inline;
+        font-size: calc(2px + 1.8vw);
+        margin-right: 0;
+    }
+
+    nav a{
+        /* Styles anchor links with border, background color, and inline display for small screens */
+        display: inline;
+        border: #EADBC8 solid 1px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #EADBC8;
+    }
+
+    nav ul{
+        /* Removes right padding from the unordered list in navigation */
+        padding-right: 0;
+    }
+
+    main{
+        /* Adjusts main content width and font size for small screens */
+        width: 90%;
+        margin: auto;
+        font-size: calc(2px + 3vw);
+    }
+
+    header{
+        /* Centers the header content for small screens */
+        text-align: center;
+    }
+}

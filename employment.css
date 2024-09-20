@@ -1,0 +1,173 @@
+*{
+    /* Resets margin and ensures box-sizing includes padding and borders in element dimensions */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div{
+    /* Limits div width to 80% and centers it horizontally */
+    max-width: 80%;
+    margin: auto;
+}
+
+header{
+    /* Styles the header with font size, text alignment, and padding */
+    font-size: calc(2px + 0.75vw);
+    text-align: left;
+    padding-left: 2%;
+}
+
+footer{
+    /* Styles the footer with padding and flexbox layout */
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+}
+
+header, footer {
+    /* Applies background color, text color, and font family to both header and footer */
+    background: #03AED2;
+    color: #FEEFAD;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+header{
+    /* Adds padding to the top and bottom of the header */
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+#column{
+    /* Displays #column as a flex container with a row layout and full width */
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+nav{
+    /* Styles the navigation section with text alignment, background color, font color, padding, and width */
+    text-align: right;
+    background: #68D2E8;
+    color: #FEEFAD;
+    padding: 5% 8%;
+    width: 25%;
+}
+
+nav li{
+    /* Styles navigation list items with top margin, font, spacing, and padding */
+    margin-top: 100%;
+    font-family: "Lucida Console", "Courier New", monospace;
+    justify-content: space-evenly;
+    display: block;
+    padding-left: 0;
+    padding-top: 20%;
+}
+
+nav a{
+    /* Styles anchor links with borders, background color, margin, and padding */
+    border: #EADBC8 solid 10px;
+    text-decoration: none;
+    background-color: #EADBC8;
+    margin: 2%;
+    padding-left: 0;
+}
+
+nav ul{
+    /* Removes padding, hides list markers, and centers the unordered list */
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+
+main{
+    /* Styles the main content area with height, background color, text color, padding, font, and box-sizing */
+    height: 100vh;
+    background: #FDDE55;
+    color: #03AED2;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    font-family: "Lucida Console", "Courier New", monospace;
+    max-width: 100%;
+    font-size: calc(2px + 1vw);
+    box-sizing: border-box;
+    padding-right: 5%;
+}
+
+main h3{
+    /* Adds padding to the bottom of h3 headings */
+    padding-bottom: 5%;
+}
+
+main h3{
+    /* Centers the h3 headings and adds padding to the bottom */
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+main h4{
+    /* Adds padding to the left and top of h4 headings */
+    padding-left: 20%;
+    padding-top: 5%;
+}
+
+main ul{
+    /* Adds padding to the left and top of unordered lists */
+    padding-left: 25%;
+    padding-top: 1%;
+}
+@media screen and (max-width: 750px) {
+    /* Responsive styling for screens with a maximum width of 750px */
+
+    #column{
+        /* Changes #column layout to inline and sets its width to 100% for small screens */
+        display: inline;
+        max-width: 100%;
+    }
+
+    nav{
+        /* Adjusts the navigation for small screens with no padding at the top and full width */
+        padding-top: 0;
+        width: 100%;
+    }
+
+    nav li{
+        /* Styles navigation list items for small screens, adjusting font size, padding, and removing bullets */
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: calc( 2px + 2vw );
+        list-style-type: none;
+        padding-left: 50%;
+    }
+
+    nav ul{
+        /* Sets unordered list in navigation to flex layout with a reduced width */
+        display: flex;
+        width: 5%;
+    }
+
+    nav a{
+        /* Styles navigation links for small screens with smaller borders and inline display */
+        display: inline;
+        border: #EADBC8 solid 2px;
+        text-decoration: none;
+    }
+
+    main{
+        /* Adjusts main content layout and font size for small screens */
+        width: 100%;
+        margin: auto;
+        font-size: calc( 2px + 2.5vw);
+    }
+
+    main h4{
+        /* Adds top padding to h4 headings for small screens */
+        padding-top: 3%;
+    }
+
+    header{
+        /* Centers header content and adjusts font size and padding for small screens */
+        text-align: center;
+        font-size: calc( 2px + 2vw);
+        padding: 7% 0;
+    }
+}
+

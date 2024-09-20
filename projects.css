@@ -1,0 +1,255 @@
+
+*{
+    /* starting with a clean slate */
+    margin: 0;
+    box-sizing: border-box;
+
+}
+div{
+    /* Don't want page to fully take over the screen*/
+    max-width: 80%;
+    margin: auto;
+}
+/* The header is where it says "sue's resume", making the heading left when the screen is big > 700 px */
+header{
+    font-size: calc(2px + 0.75vw);
+    text-align: left;
+    padding-left: 2%;
+}
+footer{
+    padding: 1vh 1vw; /* Adds padding with vertical and horizontal units relative to the viewport */
+    display: flex; /* Applies a flexbox layout to the footer */
+    flex-direction: row; /* Aligns child elements in a row */
+
+}
+
+header, footer {
+    background: #FF9E9D; /* Sets the background color for the header and footer */
+    color: black; /* Sets the text color */
+    font-family: "Lucida Console", "Courier New", monospace; /* Specifies a monospace font for the header and footer */
+}
+
+header{
+    padding-bottom: 5%; /* Adds padding at the bottom of the header */
+    padding-top: 5%; /* Adds padding at the top of the header */
+}
+
+#column{
+    display: flex; /* Applies a flexbox layout to the #column */
+    flex-direction: row; /* Aligns child elements in a row within #column */
+    max-width: 100%; /* Limits the maximum width of the element to 100% */
+}
+
+nav{
+    background: #7FC7AF; /* Sets the background color for the navigation */
+    color: black; /* Sets the text color */
+    padding: 5% 8%; /* Adds padding inside the navigation */
+    width: 25%; /* Sets the width of the navigation to 25% of the parent container */
+}
+
+nav li{
+    margin-top: 100%; /* Adds margin at the top of each list item */
+    font-family: "Lucida Console", "Courier New", monospace; /* Sets a monospace font for list items */
+    justify-content: space-evenly; /* Distributes space evenly between child elements */
+    display: block; /* Displays each list item as a block element */
+    padding-left: 0; /* Removes default padding on the left */
+    padding-top: 20%; /* Adds padding at the top of each list item */
+}
+
+nav a{
+    border: #EADBC8 solid 10px; /* Sets a solid border for the anchor links */
+    text-decoration: none; /* Removes underline from the links */
+    background-color: #EADBC8; /* Sets the background color for the links */
+    margin: 2%; /* Adds margin around each link */
+    padding-left: 0; /* Removes default padding on the left */
+}
+
+nav ul{
+    padding-left: 0; /* Removes default padding on the left of the unordered list */
+    list-style: none; /* Removes bullet points from the list */
+    text-align: center; /* Centers the text within the list */
+}
+
+main{
+    height: 100vh; /* Sets the height of the main content area to the full viewport height */
+    background: #3FB8AF; /* Sets the background color for the main content */
+    color: white; /* Sets the text color */
+    padding-bottom: 10%; /* Adds padding at the bottom of the main content */
+    padding-top: 10%; /* Adds padding at the top of the main content */
+    font-family: "Lucida Console", "Courier New", monospace; /* Sets a monospace font for the main content */
+    max-width: 100%; /* Limits the maximum width to 100% */
+    font-size: calc(2px + 1vw); /* Dynamically sets the font size based on viewport width */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    padding-right: 5%; /* Adds padding on the right side of the main content */
+}
+
+main h3{
+    padding-bottom: 5%; /* Adds padding at the bottom of the h3 heading */
+}
+
+main h3{
+    text-align: center; /* Centers the text of the h3 heading */
+    padding-bottom: 1%; /* Adds padding at the bottom of the h3 heading */
+}
+
+main h4{
+    padding-left: 20%; /* Adds padding on the left side of the h4 heading */
+    padding-top: 5%; /* Adds padding at the top of the h4 heading */
+}
+
+main ul{
+    padding-left: 25%; /* Adds padding on the left side of the unordered list */
+    padding-top: 1%; /* Adds padding at the top of the unordered list */
+}
+
+
+
+/*CALCULATOR*/
+
+#calc{
+    /* Styles the container for the calculator with a background image and size settings */
+
+    margin:auto;
+    background-image: url("https://cliply.co/wp-content/uploads/2019/02/371901360_HEART_TUNNEL_1x1_400px.gif");
+    max-width: 40%;
+    height: 50%;
+
+}
+
+#calc h3{
+    /* Styles the h3 heading within the calculator, including font family, size, and color */
+    margin:auto;
+    font-family: cursive  ;
+    color: black;
+    font-size: calc(2px + 5vw);
+
+}
+#calc label{
+    /* Styles the labels inside the calculator with font size, font family, and color */
+    margin-left: 2%;
+    font-size: calc(2px + 1vw);
+    font-family: cursive  ;
+    color: black;
+
+}
+#calc input{
+    /* Styles the input fields in the calculator with width and margin settings */
+   margin-top: 25%;
+    width:15%;
+
+
+
+}
+#calc button {
+    /* Styles the buttons within the calculator, including size, font size, border radius, and color */
+
+    width: 25%;
+    height: 5%;
+
+    font-size: calc(2px + 2vw);
+    border-radius: 50%;
+    border: none;
+    background-color: #FFC0CB;
+    color: #fff;
+}
+
+#buttons{
+    /* Arranges buttons in a flexbox layout with equal spacing and margins */
+    padding-top: 10%;
+    display:flex;
+    flex-direction: row;
+    margin:auto;
+    width: 40%;
+    justify-content: space-evenly;
+}
+#calc p{
+    /* Styles the paragraph inside the calculator, including text alignment, margins, border, and background color */
+    text-align: center;
+    margin: 10% auto;
+    color:black;
+    border: 2px solid white;
+    background: white;
+    max-width: 50%;
+
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+    /* Responsive styling for screens with a maximum width of 750px, adjusting layout and font sizes */
+    #column{
+        display: inline;
+        max-width: 100%;
+    }
+    nav{
+
+        padding-top: 0;
+
+        width: 100%;
+
+    }
+    nav li{
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: calc( 2px + 2vw );
+        list-style-type: none;
+        padding-left: 100%;
+    }
+    nav ul{
+        display: flex;
+        width: 5%;
+        padding-right: 0;
+
+
+    }
+    nav a{
+        display: inline;
+        border: #EADBC8 solid 2px;
+        text-decoration: none;
+
+
+
+    }
+    main{
+        width: 100%;
+        margin: auto;
+        font-size: calc( 2px + 2.5vw);
+    }
+    main h4{
+        padding-top: 3%;
+    }
+
+    header{
+        text-align: center;
+        font-size: calc( 2px + 1.75vw);
+        padding: 7% 0;
+    }
+    #buttons{
+        padding-top: 15%;
+        width: 50%;
+    }
+    #calc input{
+        margin-top: 40%;
+    }
+}
+@media screen and (max-width: 950px){
+    /* Additional responsive styling for screens with a maximum width of 950px, adjusting font sizes and dimensions (for nav to fit) */
+    nav li{
+        font-size: calc( 2px + 1.5vw);
+    }
+    #calc{
+
+
+        max-width: 75%;
+        height: 50%;
+
+    }
+    #calc label{
+        font-size: calc(2px + 2.5vw);
+    }
+    main{
+        font-size: calc( 2px + 1.75vw);
+    }
+
+}
+
